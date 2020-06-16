@@ -32,7 +32,7 @@ def confirm():
         respondButton.place(relx=0.3, rely=0.5, relwidth=0.4, relheight=0.2)
     if len(date) > 0 and len(location) > 0 and len(duration) > 0 and (tod1 == True) and (tod2 == False) and (tod3 == False):
         tod = "morning"
-        msg = ("You drove at %s, \non %s, \nfor %s minute(s),\n in the %s!\nSuccessfully printed information to\ntext document!" %(location, date, duration, tod))
+        msg = ("You drove at %s, \non %s, \nfor %s minute(s),\n in the %s!\nSuccessfully printed information to\nDrivingStatistics.txt!" %(location, date, duration, tod))
         txtMsg = ("You drove at %s, on %s, for %s minute(s), in the %s!\r\n" %(location, date, duration, tod))
         respond(msg)
         file=open("DrivingStatistics.txt", "a+")
@@ -40,7 +40,7 @@ def confirm():
         file.close()
     elif len(date) > 0 and len(location) > 0 and len(duration) > 0 and (tod1 == False) and (tod2 == True) and (tod3 == False):
         tod = "afternoon"
-        msg = ("You drove at %s, \non %s, \nfor %s minute(s),\n in the %s!\nSuccessfully printed information to\ntext document!" %(location, date, duration, tod))
+        msg = ("You drove at %s, \non %s, \nfor %s minute(s),\n in the %s!\nSuccessfully printed information to\nDrivingStatistics.txt!" %(location, date, duration, tod))
         txtMsg = ("You drove at %s, on %s, for %s minute(s), in the %s!\r\n" %(location, date, duration, tod))
         respond(msg)
         file=open("DrivingStatistics.txt", "a+")
@@ -48,7 +48,7 @@ def confirm():
         file.close()
     elif len(date) > 0 and len(location) > 0 and len(duration) > 0 and (tod1 == False) and (tod2 == False) and (tod3 == True):
         tod = "night"
-        msg = ("You drove at %s, \non %s, \nfor %s minute(s),\n in the %s!\nSuccessfully printed information to\ntext document!" %(location, date, duration, tod))
+        msg = ("You drove at %s, \non %s, \nfor %s minute(s),\n in the %s!\nSuccessfully printed information to\nDrivingStatistics.txt!" %(location, date, duration, tod))
         txtMsg = ("You drove at %s, on %s, for %s minute(s), in the %s!\r\n" %(location, date, duration, tod))
         respond(msg)
         file=open("DrivingStatistics.txt", "a+")
